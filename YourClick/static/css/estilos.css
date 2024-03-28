@@ -1,0 +1,41 @@
+.box{
+    width: 25vw;
+    height: 25vh;
+    text-align: center;
+}
+.word{
+    position: relative;
+    top: 42%;
+}
+
+#box1{
+    position: fixed;
+    left:18vw;
+    top:18vh;
+    background-color: black;
+    color: white;
+}
+
+#box2{
+    position: fixed;
+    right:18vw;
+    top:18vh;
+    background-color: blue;
+    color: white;
+}
+
+#box3{
+    position: fixed;
+    left:18vw;
+    bottom:18vh;
+    background-color: green;
+    color: white;
+}
+
+#box4{
+    position: fixed;
+    right:18vw;
+    bottom:18vh;
+    background-color: red;
+    color: white;
+}
