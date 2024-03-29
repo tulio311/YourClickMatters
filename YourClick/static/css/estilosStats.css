@@ -1,0 +1,23 @@
+body{
+    padding-top: 10vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+#grid34{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0;
+}
+
+#grid6{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.minibox{
+    height: 20px;
+    text-align: center;
+    padding-top: 20px;
+}   

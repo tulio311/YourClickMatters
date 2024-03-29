@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/estilosStats.css')}}">
+
+</head>
+<body>
+    <div id="grid34">
+        <div style="background-color: black;" class="minibox"></div>
+        <div style="background-color: blue;" class="minibox"></div>
+        <div style="background-color: green;" class="minibox"></div>
+        <div style="background-color: red;" class="minibox"></div>
+        <div class="minibox">{{totals[0]}}</div>
+        <div class="minibox">{{totals[1]}}</div>
+        <div class="minibox">{{totals[2]}}</div>
+        <div class="minibox">{{totals[3]}}</div>
+        <div class="minibox">{{perc[0]}}%</div>
+        <div class="minibox">{{perc[1]}}%</div>
+        <div class="minibox">{{perc[2]}}%</div>
+        <div class="minibox">{{perc[3]}}%</div>
+    </div>
+
+    <div style="height: 60px;"></div>
+
+    <div id="grid6">
+        
+        {% for i in range(9)%}
+            <div>
+                <div class="minibox" style="border:1px solid black; padding-bottom: 20px; border-radius: 5px;">{{words[i]}}</div>
+                <div class="minibox">{{totalsW[i]}}</div>
+                <div class="minibox" style="margin-bottom: 20px;">{{percW[i]}}%</div>
+            </div>
+        {% endfor %}
+    </div>
+
+
+</body>
+</html>

@@ -5,14 +5,24 @@
     <meta name="google" content="notranslate" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your click matters</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/estilos.css')}}">
+
 </head>
 
-<link rel="stylesheet" href="{{url_for('static', filename='css/estilos.css')}}">
+
 
 <body>
-    <div id="box1" class="box"><div class="word">{{word1}}</div></div>
-    <div id="box2" class="box"><div class="word">{{word2}}</div></div>
-    <div id="box3" class="box"><div class="word">{{word3}}</div></div>
-    <div id="box4" class="box"><div class="word">{{word4}}</div></div>
+    <div id="box1" class="box"><div class="word" id="word1">{{word1}}</div></div>
+    <div id="box2" class="box"><div class="word" id="word2">{{word2}}</div></div>
+    <div id="box3" class="box"><div class="word" id="word3">{{word3}}</div></div>
+    <div id="box4" class="box"><div class="word" id="word4">{{word4}}</div></div>
+
+    <div id="statsBox"><a href="/stats"><div>Stats</div></a></div>
+
+
+    <script src="{{url_for('static',filename='js/jquery-3.7.1.js')}}"></script>
+    <script src="{{url_for('static',filename='js/cajas.js')}}"></script>
+
+
 </body>
 </html>
